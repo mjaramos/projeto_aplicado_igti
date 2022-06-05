@@ -1,0 +1,115 @@
+1.1.1 Análise de Contexto
+O que significa esta seção?
+Esta seção tem o objetivo de apresentar o contexto do desafio do Projeto Aplicado que está sendo desenvolvido.
+Quais etapas já devem estar finalizadas no momento do preenchimento desta seção? (Pré-requisitos)
+No momento do preenchimento, é esperado que você já tenha cursado a disciplina de Inovação e Design Thinking, em especial as etapas de Imersão Preliminar e Profunda.
+Além disso, é importante que você esteja se preparando para especificar o Desafio (Problema) do seu Projeto Aplicado.
+Como esta seção deve ser preenchida?
+O sucesso do seu projeto está diretamente relacionado à compreensão do verdadeiro desafio.
+A compreensão sistêmica do problema (e de seu entorno) pode dar importantes insights sobre o que é mais relevante para ser tratado. 
+Nesta seção, apresente detalhes do Desafio proposto em seu Projeto Aplicado, por meio de uma contextualização do cenário, destacando as características, as particularidades e pessoas envolvidas no problema.
+Algumas perguntas que devem ser respondidas: quais são as verdadeiras causas do problema? Quais percepções ou informações foram utilizadas para embasar essa decisão? Como as pesquisas foram conduzidas? Existem registros e evidências?
+Quais ferramentas devem ser utilizadas?
+Para realizar esta seção, o aluno deverá utilizar, no mínimo, as seguintes ferramentas: 
+●	Matriz CSD.
+●	Observação do tipo POEMS.
+
+1.1.2 Personas
+
+O que significa esta seção?
+Esta seção tem o objetivo de apresentar as pessoas envolvidas diretamente no problema apresentado, definindo suas características pessoais, sociais, intelectuais e profissionais, com o máximo de detalhes possíveis.
+Quais etapas já devem estar finalizadas no momento do preenchimento desta seção? (Pré-requisitos)
+No momento do preenchimento, é esperado que você já tenha cursado a disciplina de Inovação e Design Thinking, em especial as etapas de Imersão Preliminar e Profunda.
+Além disso, é importante que você esteja se preparando para especificar o Desafio (Problema) do seu Projeto Aplicado.
+Como esta seção deve ser preenchida?
+A partir das informações obtidas na Imersão Profunda, você deverá criar o mapa de empatia (o que ele pensa e sente?; o que ele escuta?; o que fala e faz?; o que ele vê?; quais são seus medos, frustrações e obstáculos?; quais são suas necessidades?). 
+Deverá ser criado, também, um biótipo para sua persona, com tudo aquilo que for relevante para melhor compreendê-la (nome fictício, idade, profissão, características comportamentais etc.).
+Quais ferramentas devem ser utilizadas?
+Para realização desta seção o aluno deverá utilizar, no mínimo, a seguinte ferramenta: 
+●	Mapa de Empatia.
+
+1.1.3 Benefícios e Justificativas
+
+O que significa esta seção?
+Esta seção tem o objetivo de apresentar as justificativas que motivam o desenvolvimento do projeto.
+Quais etapas já devem estar finalizadas no momento do preenchimento desta seção? (Pré-requisitos)
+No momento do preenchimento é esperado que você já tenha cursado a disciplina de Inovação e Design Thinking, em especial as etapas de Imersão Preliminar e Profunda.
+Além disso, é importante que você esteja se preparando para especificar o Desafio (Problema) do seu Projeto Aplicado.
+Como esta seção deve ser preenchida?
+A partir do conhecimento aprofundado do contexto do desafio e da definição das personas, apresente os fatores que justificam o desenvolvimento do projeto. 
+Lembre-se de que o investimento em um novo projeto deve ser justificado com base nos benefícios futuros esperados, tais como, redução de custos, novas formas de gerar receitas, impactos sociais e ambientais, entre outros. 
+Quanto maior for o impacto potencial do projeto, mais argumentos você terá para implementá-lo. 
+Busque respostas para as seguintes perguntas: Quais são os principais fatores que justificam a implantação do seu projeto? Qual é o cenário atual e quais são os benefícios futuros esperados? Qual é a sua proposta de valor?
+Quais ferramentas devem ser utilizadas?
+Para realização desta seção o aluno deverá utilizar, no mínimo, as seguintes ferramentas: 
+●	Blueprint.
+●	CANVAS de Proposta de Valor.
+
+1.1.4 Hipóteses
+
+O que significa esta seção?
+Esta seção tem o objetivo de apresentar as hipóteses relacionadas ao desafio que motivam o desenvolvimento da solução.
+Quais etapas já devem estar finalizadas no momento do preenchimento desta seção? (Pré-requisitos)
+No momento do preenchimento, é esperado que você já tenha cursado a disciplina de Inovação e Design Thinking, em especial as etapas de Imersão Preliminar e Profunda e Síntese e Conclusão.
+Além disso, é importante que você esteja se preparando para especificar o Desafio (Problema) do seu Projeto Aplicado.
+Como esta seção deve ser preenchida?
+A partir do conhecimento aprofundado do contexto do desafio e da definição das personas, apresente as hipóteses que irão direcionar o desenvolvimento da solução.
+Lembre-se de que antes de iniciar o desenvolvimento da solução é necessário validar o problema e definir as personas!
+Transforme as observações feitas nas etapas anteriores em pequenas frases afirmativas (cuidado para não interpretar ou julgar!). Pergunte por que elas estão acontecendo e tente respondê-las. Assim, você irá gerar as hipóteses direcionadoras do projeto.
+Quais ferramentas devem ser utilizadas?
+Para realização desta seção o aluno deverá utilizar, no mínimo, as seguintes ferramentas:
+●	Matriz de observações para hipóteses.
+●	Priorização de Ideias.
+
+1.2.1 Objetivo SMART
+
+O que significa esta seção?
+Esta seção tem o objetivo de apresentar, de maneira bem estruturada, os objetivos do projeto, definindo expectativas claras e objetivas, para maximizar as chances de alcançar os resultados esperados.
+Quais etapas já devem estar finalizadas no momento do preenchimento desta seção? (Pré-requisitos)
+No momento do preenchimento é esperado que você já tenha cursado a disciplina de Inovação e Design Thinking, em especial as etapas de Imersão Preliminar e Profunda, Síntese e Conclusão e Ideação.
+Além disso, você deve estar se preparando para especificar o escopo pretendido para a solução a ser desenvolvida no seu Projeto Aplicado.
+Como esta seção deve ser preenchida?
+Deve-se criar um objetivo com as seguintes características: 
+●	S (Specific – Específico), ou seja, identificar o resultado desejado sem ter ambiguidade. Ex.: ao invés de ter um objetivo genérico de “ganhar mais dinheiro”, busque uma forma de especificar, como “conquistar um novo cliente até o final do mês”.
+●	M (Mensurable - Mensurável), ou seja, ser capaz de medir. Ex.: ao invés de um objetivo de “trabalhar mais”, substituir por “trabalhar uma hora a mais por dia”.
+●	A (Attainable – Atingível), de forma que os objetivos possam ser alcançados com os recursos disponíveis e o tempo do projeto.
+●	R (Relevant – Relevante), considerando as necessidades atuais do contexto e se elas vão, realmente, fazer a diferença para o negócio.
+●	T (Time based – Temporal), com descrição do tempo máximo para alcançar os objetivos. Ex.: Até o final do curso?
+Quais ferramentas devem ser utilizadas?
+Para realização desta seção não é necessário utilizar ferramentas.
+
+1.2.2 Premissas e Restrições
+
+O que significa esta seção?
+Esta seção tem o objetivo de apresentar as condições necessárias para que o projeto seja desenvolvido de maneira eficiente.
+Quais etapas já devem estar finalizadas no momento do preenchimento desta seção? (Pré-requisitos)
+No momento do preenchimento, é esperado que você já tenha cursado a disciplina de Inovação e Design Thinking, em especial as etapas de Imersão Preliminar e Profunda, Síntese e Conclusão e Ideação.
+Além disso, você deve estar se preparando para especificar o escopo pretendido para a solução a ser desenvolvida no seu Projeto Aplicado.
+Como esta seção deve ser preenchida?
+Premissas e restrições são conceitos fundamentais para o sucesso de um projeto, buscando garantir que sejam cumpridos requisitos de custo, escopo, qualidade e prazos estabelecidos.
+Neste contexto, as premissas se apresentam como sentenças consideradas verdadeiras, porém não se pode comprová-las, pois elas dependem de fatores externos.
+Ex.: escolher determinada linguagem de programação para desenvolver a solução, mesmo tendo ciência de que esta não é padrão de mercado.
+Enquanto isso, as restrições podem ser definidas como limitações internas ou externas ao projeto.
+Ex.: limite de recursos, de prazo, regulamentação etc.
+As perguntas a serem respondidas são: 
+●	Quais são as premissas para que seu projeto seja executado?
+●	Quais as consequências (impactos) caso essas premissas não sejam verdadeiras?
+●	Quais são as restrições do projeto?
+Quais ferramentas devem ser utilizadas?
+Para realização desta seção, deve-se utilizar:
+●	Matriz de Riscos.
+
+1.2.3 Backlog de Produto
+
+O que significa esta seção?
+Esta seção tem o objetivo de apresentar, de maneira bem detalhada, o backlog de requisitos idealizados para o desenvolvimento da solução. 
+O Backlog de Produto deve ser sempre atualizado, de acordo com a evolução do projeto.
+Quais etapas já devem estar finalizadas no momento do preenchimento desta seção? (Pré-requisitos)
+No momento do preenchimento, é esperado que você já tenha cursado a disciplina de Inovação e Design Thinking, em especial as etapas de Imersão Preliminar e Profunda, Síntese e Conclusão e Ideação.
+Além disso, você deve estar se preparando para especificar o escopo pretendido para a solução a ser desenvolvida no seu Projeto Aplicado.
+Como esta seção deve ser preenchida?
+Deve-se criar uma lista de requisitos necessários para o desenvolvimento da solução, alinhando os mesmos com as disciplinas futuras a serem cursadas.
+É importante que você defina sprints de desenvolvimento da solução, de acordo com as próximas disciplinas.
+No seu planejamento, no total, devem ser consideradas as realizações de 3 sprints.
+Quais ferramentas devem ser utilizadas?
+Para realização desta seção você deverá utilizar o Trello.
