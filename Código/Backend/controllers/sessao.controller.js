@@ -3,12 +3,12 @@ import SessaoService from '../services/sessao.service.js';
 async function createSessao(req, res, next) {
   try {
     let sessao = req.body;
-    if (!sessao.nome || !sessao.valor || !sessao.pacienteId) {
-      throw new Error('Nome, valor e pacienteId são obrigatórios.');
+    if (!sessao.observacao || !sessao.valor || !sessao.pacienteId) {
+      throw new Error('Observação, valor e pacienteId são obrigatórios.');
     }
     sessao = await SessaoService.createSessao(sessao);
     res.send(sessao);
-    logger.info(`POST /sessao - ${JSON.stringify(sessao)}`);
+    console.log(`POST /sessao - ${JSON.stringify(sessao)}`);
   } catch (error) {
     next(error);
   }
@@ -27,7 +27,7 @@ async function updateSessao(req, res, next) {
     }
     sessao = await SessaoService.updateSessao(sessao);
     res.send(sessao);
-    logger.info(`PUT /sessao - ${JSON.stringify(sessao)}`);
+    console.log(`PUT /sessao - ${JSON.stringify(sessao)}`);
   } catch (error) {
     next(error);
   }
@@ -38,7 +38,7 @@ async function deleteSessao(req, res, next) {
     let id = req.params.id;
     await SessaoService.deleteSessao(id);
     res.end();
-    logger.info(`DELETE /sessao/:{id}`);
+    console.log(`DELETE /sessao/:{id}`);
   } catch (error) {
     next(error);
   }
@@ -48,7 +48,7 @@ async function getSessao(req, res, next) {
   try {
     let id = req.params.id;
     res.send(await SessaoService.getSessao(id));
-    logger.info(`GET /sessao/:{id}`);
+    console.log(`GET /sessao/:{id}`);
   } catch (error) {
     next(error);
   }
@@ -57,7 +57,7 @@ async function getSessao(req, res, next) {
 async function getSessoes(req, res, next) {
   try {
     res.send(await SessaoService.getSessoes(req.query.autorId));
-    logger.info('GET /sessao');
+    console.log('GET /sessao');
   } catch (error) {
     next(error);
   }

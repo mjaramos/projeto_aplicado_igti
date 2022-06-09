@@ -50,7 +50,13 @@ async function getSessao(id) {
 
 async function getSessoes() {
   try {
-    return await Sessao.findAll();
+    return await Sessao.findAll({
+      include: [
+        {
+          model: Paciente
+        }
+      ]
+    });
   } catch (error) {
     throw error;
   }

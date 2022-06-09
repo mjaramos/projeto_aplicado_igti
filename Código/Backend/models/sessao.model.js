@@ -1,6 +1,6 @@
 import Sequelize from 'sequelize';
 import db from '../repositories/db.js';
-import Paciente from './paciente.models.js';
+import Paciente from './paciente.model.js';
 
 const Sessao = db.define(
   'sessoes',

@@ -8,7 +8,7 @@ async function createPaciente(req, res, next) {
     }
     paciente = await PacienteService.createPaciente(paciente);
     res.send(paciente);
-    logger.info(`POST /paciente - ${JSON.stringify(paciente)}`);
+    console.log(`POST /paciente - ${JSON.stringify(paciente)}`);
   } catch (error) {
     next(error);
   }
@@ -22,7 +22,7 @@ async function updatePaciente(req, res, next) {
     }
     paciente = await PacienteService.updatePaciente(paciente);
     res.send(paciente);
-    logger.info(`PUT /paciente - ${JSON.stringify(paciente)}`);
+    console.log(`PUT /paciente - ${JSON.stringify(paciente)}`);
   } catch (error) {
     next(error);
   }
@@ -33,7 +33,7 @@ async function deletePaciente(req, res, next) {
     let id = req.params.id;
     await PacienteService.deletePaciente(id);
     res.end();
-    logger.info(`DELETE /paciente/:{id}`);
+    console.log(`DELETE /paciente/:{id}`);
   } catch (error) {
     next(error);
   }
@@ -43,7 +43,7 @@ async function getPaciente(req, res, next) {
   try {
     let id = req.params.id;
     res.send(await PacienteService.getPaciente(id));
-    logger.info(`GET /paciente/:{id}`);
+    console.log(`GET /paciente/:{id}`);
   } catch (error) {
     next(error);
   }
@@ -51,8 +51,8 @@ async function getPaciente(req, res, next) {
 
 async function getPacientes(req, res, next) {
   try {
-    res.send(await PacienteService.getPacientees());
-    logger.info('GET /paciente');
+    res.send(await PacienteService.getPacientes());
+    console.log('GET /paciente');
   } catch (error) {
     next(error);
   }

@@ -19,8 +19,8 @@ async function deletePaciente(id) {
   await PacienteRepository.deletePaciente(id);
 }
 
-async function getPacientees() {
-  return await PacienteRepository.getPacientees();
+async function getPacientes() {
+  return await PacienteRepository.getPacientes();
 }
 
 async function getPaciente(id) {
@@ -29,7 +29,7 @@ async function getPaciente(id) {
 
 export default {
   createPaciente,
-  getPacientees,
+  getPacientes,
   getPaciente,
   deletePaciente,
   updatePaciente,
