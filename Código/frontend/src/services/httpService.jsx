@@ -14,3 +14,13 @@ export async function create(url, dado) {
   const {data} = await axiosInstance.post(url, dado);
   return data;
 }
+
+export async function deletar(url) {
+  const {data} = await axiosInstance.delete(url);
+  return data;
+}
+
+export async function edit(url, dado){
+  const {data} = await axiosInstance.put(url, dado);
+  return data;
+}

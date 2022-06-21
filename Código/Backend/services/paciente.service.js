@@ -11,9 +11,10 @@ async function updatePaciente(paciente) {
 
 async function deletePaciente(id) {
   const sessoes = await SessaoRepository.getSessoesByPaciente(id);
-  if (!sessoes) {
+  console.log("Sessoes: ",sessoes)
+  if (sessoes.length > 0) {
     throw new Error(
-      'Não pode excluir paciente pois o mesmo já tem sessao associado.'
+      "Não pode excluir paciente pois o mesmo já tem sessao associado."
     );
   }
   await PacienteRepository.deletePaciente(id);

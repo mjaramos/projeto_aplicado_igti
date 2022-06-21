@@ -1,5 +1,5 @@
 export interface PacienteState {
-  idPaciente: number | null;
+  pacienteId: number | null;
   nome: string | null;
   email: string | null;
   telefone: string | null;
@@ -7,7 +7,7 @@ export interface PacienteState {
 }
 
 export const InitialPacienteState : PacienteState = {
-  idPaciente: null,
+  pacienteId: null,
   nome: null,
   email: null,
   telefone: null,
