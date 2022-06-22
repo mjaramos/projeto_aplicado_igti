@@ -6,7 +6,8 @@ async function createSessao(sessao) {
   if (!paciente) {
     throw new Error('Paciente não existente na base da dados');
   }
-  return await SessaoRepository.insertSessao(sessao);
+  let novaSessao = await SessaoRepository.insertSessao(sessao);
+  return getSessao(novaSessao.sessaoId);
 }
 
 async function updateSessao(sessao) {

@@ -12,7 +12,8 @@ const Sessao = db.define(
       primaryKey: true,
     },
     data: {
-      type: Sequelize.DATE,
+      type: 'TIMESTAMP',
+      defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       allowNull: false,
     },
     observacao: {

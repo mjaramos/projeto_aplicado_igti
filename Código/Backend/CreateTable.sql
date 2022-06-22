@@ -9,7 +9,7 @@ endereco VARCHAR NOT NULL
 CREATE TABLE sessoes(
 sessao_id  SERIAL PRIMARY KEY,
 paciente_id INT NOT NULL,
-data DATE NOT NULL,
+data TIMESTAMP NOT NULL,
 observacao VARCHAR NOT NULL,
 valor NUMERIC NOT NULL,
 CONSTRAINT fk_pacientes FOREIGN KEY (paciente_id) REFERENCES pacientes (paciente_id)

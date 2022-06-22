@@ -42,7 +42,11 @@ async function deleteSessao(id) {
 
 async function getSessao(id) {
   try {
-    return await Sessao.findByPk(id, { raw: true });
+    return await Sessao.findByPk(id, { include: [
+      {
+        model: Paciente
+      }
+    ] });
   } catch (error) {
     throw error;
   }

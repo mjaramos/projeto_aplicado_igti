@@ -20,11 +20,6 @@ async function updateSessao(req, res, next) {
     if (!sessao.sessaoId || !sessao.valor) {
       throw new Error('Sessao_Id e valor são obrigatórios.');
     }
-    if (sessao.nome || sessao.pacienteId) {
-      throw new Error(
-        'Os campos nome e pacienteId não são permitidos para a atualização.'
-      );
-    }
     sessao = await SessaoService.updateSessao(sessao);
     res.send(sessao);
     console.log(`PUT /sessao - ${JSON.stringify(sessao)}`);

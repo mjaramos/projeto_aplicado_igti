@@ -1,7 +1,7 @@
 import { useForm } from 'react-hook-form';
 import { InitialPacienteState, PacienteState } from './PacienteSlice';
 import Input from './component/Input';
-import { apiCreatePaciente, apiDeletePacientes, apiEditPaciente, apiGetPacientes } from './services/pacienteService';
+import { apiCreatePaciente, apiDeletePaciente, apiEditPaciente, apiGetPacientes } from './services/pacienteService';
 import React, { useEffect, useState } from 'react';
 import { CustomTable } from './component/CustomTable';
 import Mensagem from './component/Mensagem';
@@ -58,7 +58,7 @@ export default function Paciente() {
     limparCampos();
 
     setCreated(true);
-    setMensagem([`Sucesso ao atulizar o paciente!`])
+    setMensagem([`Sucesso ao atualizar o paciente!`])
 
   }
 
@@ -80,7 +80,7 @@ export default function Paciente() {
   const deletar = async (pacienteId: number) => {
 
     try {
-      await apiDeletePacientes(pacienteId);
+      await apiDeletePaciente(pacienteId);
       setPacientes(eliminarId(pacientes, pacienteId))
     } catch (error: any) {
       setMensagem([error]);

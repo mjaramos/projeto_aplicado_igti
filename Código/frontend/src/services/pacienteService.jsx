@@ -15,7 +15,7 @@ export async function apiGetPacientes() {
   return getPacientes;
 }
 
-export async function apiDeletePacientes(idPaciente) {
+export async function apiDeletePaciente(idPaciente) {
   const getPacientes = await deletar('/paciente/'+idPaciente);
   return getPacientes;
 }
