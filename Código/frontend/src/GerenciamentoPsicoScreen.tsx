@@ -22,6 +22,7 @@ export default function GerenciamentoPsicoScreen() {
           <Tab label="Home" icon={<i className="fa-solid fa-house" />} />
           <Tab label="Paciente" icon={<i className="fa-solid fa-user" />} />
           <Tab label="Sessões" icon={<i className="fa-solid fa-file" />} />
+          <Tab label="Relatórios" icon={<i className="fa-solid fa-file" />} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
