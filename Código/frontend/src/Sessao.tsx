@@ -8,6 +8,7 @@ import Mensagem from './component/Mensagem';
 import { Select } from './component/Select';
 import TextArea from './component/TextArea';
 import { PacienteState } from './PacienteSlice';
+import SessaoReports from './reports/SessaoReports';
 import { apiGetPacientes } from './services/pacienteService';
 import { apiCreateSessao, apiDeleteSessao, apiEditSessao, apiGetSessoes } from './services/sessaoService';
 import { InitialSessaoState, SessaoState } from './SessaoSlice';
@@ -20,6 +21,10 @@ export default function Sessao() {
   const [mensagem, setMensagem] = useState<string[] | []>([]);
 
   const { formState: { errors }, control, handleSubmit, setValue } = useForm<SessaoState>({ defaultValues: InitialSessaoState });
+
+  const report = () => {
+    SessaoReports(sessoes);
+  }
 
   const limparCampos = () => {
     setValue('pacienteId', '0');

@@ -58,10 +58,21 @@ async function getPacientes(req, res, next) {
   }
 }
 
+async function getPacienteLikeNome(req, res, next) {
+  try {
+    let nome = req.query.nome;
+    res.send(await PacienteService.getPacienteLikeNome(nome));
+    console.log(`GET /paciente/:{nome}`);
+  } catch (error) {
+    next(error);
+  }
+}
+
 export default {
   createPaciente,
   getPacientes,
   getPaciente,
   deletePaciente,
   updatePaciente,
+  getPacienteLikeNome,
 };

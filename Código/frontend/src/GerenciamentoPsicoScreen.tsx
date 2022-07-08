@@ -4,6 +4,7 @@ import { Header } from './component/Header';
 import TabPanel from './component/TabPanel';
 import HomePage from './HomePage';
 import Paciente from './Paciente';
+import Relatorio from './Relatorio';
 import Sessao from './Sessao';
 
 export default function GerenciamentoPsicoScreen() {
@@ -22,7 +23,7 @@ export default function GerenciamentoPsicoScreen() {
           <Tab label="Home" icon={<i className="fa-solid fa-house" />} />
           <Tab label="Paciente" icon={<i className="fa-solid fa-user" />} />
           <Tab label="Sessões" icon={<i className="fa-solid fa-file" />} />
-          <Tab label="Relatórios" icon={<i className="fa-solid fa-file" />} />
+          <Tab label="Relatórios" icon={<i className="fa-solid fa-file-pdf" />} />
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
@@ -33,6 +34,9 @@ export default function GerenciamentoPsicoScreen() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         <Sessao />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <Relatorio />
       </TabPanel>
     </>
   )

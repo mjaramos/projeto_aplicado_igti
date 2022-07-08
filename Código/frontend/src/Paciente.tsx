@@ -8,6 +8,7 @@ import Mensagem from './component/Mensagem';
 import { Box } from '@material-ui/core';
 
 import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
+import PacienteReports from './reports/PacienteReports';
 
 export default function Paciente() {
 
@@ -22,6 +23,10 @@ export default function Paciente() {
     setValue('email', '');
     setValue('telefone', '');
     setValue('endereco', '');
+  }
+
+  const report = () => {
+    PacienteReports(pacientes);
   }
 
   const submeter = async (paciente: PacienteState) => {
