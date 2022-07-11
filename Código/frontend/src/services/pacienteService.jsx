@@ -19,3 +19,8 @@ export async function apiDeletePaciente(idPaciente) {
   const getPacientes = await deletar('/paciente/'+idPaciente);
   return getPacientes;
 }
+
+export async function apiGetPacientesLikeNome(nomePaciente) {
+  const getPacientes = await read('/paciente/likeNome?nome='+nomePaciente);
+  return getPacientes;
+}

@@ -27,6 +27,9 @@ async function getPacientes() {
 async function getPaciente(id) {
   return await PacienteRepository.getPaciente(id);
 }
+async function getPacienteLikeNome(nome) {
+  return await PacienteRepository.getPacienteLikeNome(nome);
+}
 
 export default {
   createPaciente,
@@ -34,4 +37,5 @@ export default {
   getPaciente,
   deletePaciente,
   updatePaciente,
+  getPacienteLikeNome,
 };
