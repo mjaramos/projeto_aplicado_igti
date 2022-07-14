@@ -20,6 +20,8 @@ export default function Relatorio() {
   const [pacientes, setPacientes] = useState<PacienteState[] | []>([]);
   const [mensagem, setMensagem] = useState<string[] | []>([]);
 
+  const simNao = [{ label: "Sim", value: "S" }, { label: "Não", value: "N" }]
+
   function selectPacientes(bkPacientes) {
     let retorno: any = ([] as any).concat(
       bkPacientes.map((pac) => {
@@ -56,8 +58,6 @@ export default function Relatorio() {
     let ses = sessoes;
     let verificaData = false;
 
-    console.log("Retorno no inicio: ", ses)
-
     if (relatorio.dataInicial !== null) {
       if (relatorio.dataFinal === null) {
         setMensagem([`Precisa informar o data final!`])
@@ -73,13 +73,11 @@ export default function Relatorio() {
 
     console.log("Paciente: ", relatorio.pacienteId)
     if (relatorio.pacienteId !== '') {
-      console.log("Entrou na verificação do paciente")
       ses = ses.filter((sessao) => {
         return sessao.pacienteId.toString() === relatorio.pacienteId
       })
     }
     if (verificaData) {
-      console.log("Entrou na verificação de datas")
       ses = ses.filter((sessao) => {
         let data = moment(sessao.data, 'YYYY-MM-DD');
         let dataInicio = moment(relatorio.dataInicial, 'YYYY-MM-DD');
@@ -88,7 +86,15 @@ export default function Relatorio() {
       })
     }
 
-    console.log("Retorno no final: ", ses)
+    if (relatorio.pago === 'Sim') {
+      ses = ses.filter((sessao) => {
+        return sessao.inPago === true
+      })
+    } else if (relatorio.pago === 'Não') {
+      ses = ses.filter((sessao) => {
+        return sessao.inPago === false
+      })
+    }
 
     SessaoReports(ses);
   }
@@ -144,6 +150,13 @@ export default function Relatorio() {
               label="Data Final"
               type="date"
               mode="number"
+              control={control}
+              errors={errors}
+            />
+            <Select
+              id="pago"
+              label="Pago"
+              options={simNao}
               control={control}
               errors={errors}
             />
