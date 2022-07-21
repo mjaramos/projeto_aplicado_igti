@@ -225,7 +225,7 @@ export default function Sessao() {
           data={sessoes.map((sessao) => ({
             ...sessao,
             data: moment(sessao.data).format('DD/MM/yyyy HH:mm'),
-            pago: sessao.inPago ? <i className="fa-solid fa-thumbs-up text-green-500" /> : <i className="fa-solid fa-thumbs-down text-red-500" />,
+            pago: sessao.inPago ? <i className="fa-solid fa-circle-dollar-to-slot text-green-500" /> : <i className="fa-solid fa-circle-dollar-to-slot text-red-500" />,
             acoes: (
               <div>
                 <button

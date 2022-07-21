@@ -25,14 +25,10 @@ export default function Calendario() {
 
   function getTodoList(date) {
     const day = getDate(date);
-    console.log("Day: ", day);
     const month = getMonth(date) + 1;
-    console.log("Month: ", month);
     return sessoes.filter((sessao) => {
       let dia = parseInt(moment(sessao.data).format('DD'))
-      console.log("Dia: ", dia)
       let mes = parseInt(moment(sessao.data).format('MM'))
-      console.log("Mes: ", mes)
       return day === dia && month === mes
     })
   }
@@ -53,13 +49,15 @@ export default function Calendario() {
                 {list.map((item, index) => (
                   <p key={index}>
                     <b>{moment(item.data).utc().format('HH:mm')}</b> - {item?.paciente?.nome}
-                    {item.inPago ? <i className="fa-solid fa-thumbs-up text-green-500" /> : <i className="fa-solid fa-thumbs-down text-red-500" />}
+                    {item.inPago ?
+                      <i className="fa-solid fa-thumbs-up text-green-500" /> : <i
+                        className="fa-solid fa-thumbs-down text-red-500" />}
                   </p>
                 ))}
               </Popover>
             }
           >
-            <a>{moreCount} more</a>
+            <a>{moreCount} mais</a>
           </Whisper>
         </li>
       );
@@ -69,7 +67,9 @@ export default function Calendario() {
           {displayList.map((item, index) => (
             <li key={index}>
               <Badge /> <b>{moment(item.data).utc().format('HH:mm')}</b> - {item?.paciente?.nome}
-              {item.inPago ? <i className="fa-solid fa-thumbs-up text-green-500" /> : <i className="fa-solid fa-thumbs-down text-red-500" />}
+              {item.inPago ?
+                <i className="fa-solid fa-thumbs-up text-green-500" /> :
+                <i className="fa-solid fa-thumbs-down text-red-500" />}
             </li>
           ))}
           {moreCount ? moreItem : null}
@@ -81,16 +81,16 @@ export default function Calendario() {
 
   }
 
-  function mudarMes(date) {
-    console.log('Mes: ', date)
-    moment(date)
-    return "";
-  }
+  // function mudarMes(date) {
+  //   console.log('Mes: ', date)
+  //   moment(date)
+  //   return "";
+  // }
 
   return (
     <Box alignItems="start" className="text-center pb-5">
       <CustomProvider locale={ptBR}>
-        <Calendar renderCell={renderCell} bordered={true} onChange={mudarMes} />
+        <Calendar renderCell={renderCell} bordered={true} />
       </CustomProvider>
     </Box>
   )
