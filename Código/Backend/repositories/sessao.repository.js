@@ -14,7 +14,8 @@ async function updateSessao(sessao) {
     await Sessao.update(
       {
         valor: sessao.valor,
-        observacao: sessao.observacao
+        observacao: sessao.observacao,
+        inPago: sessao.inPago
       },
       {
         where: {
@@ -59,7 +60,10 @@ async function getSessoes() {
         {
           model: Paciente
         }
-      ]
+      ],
+      order: [
+          ['data', 'ASC']
+      ],
     });
   } catch (error) {
     throw error;

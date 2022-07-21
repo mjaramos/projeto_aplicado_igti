@@ -3,6 +3,7 @@ export interface RelatorioState {
   pacienteId: string;
   dataInicial: string | null;
   dataFinal: string | null;
+  pago: string | null;
 }
 
 export const InitialRelatorioState : RelatorioState = {
@@ -10,4 +11,5 @@ export const InitialRelatorioState : RelatorioState = {
   pacienteId: '',
   dataInicial: null,
   dataFinal: null,
+  pago: null,
 }

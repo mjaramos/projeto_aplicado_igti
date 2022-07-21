@@ -1,9 +1,10 @@
-import { Box } from '@material-ui/core';
+import { Box, colors } from '@material-ui/core';
 import moment from 'moment';
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { CustomTable } from './component/CustomTable';
 import Input from './component/Input';
+import Checkbox from './component/Checkbox';
 import Mensagem from './component/Mensagem';
 import { Select } from './component/Select';
 import TextArea from './component/TextArea';
@@ -20,7 +21,7 @@ export default function Sessao() {
   const [created, setCreated] = useState(true);
   const [mensagem, setMensagem] = useState<string[] | []>([]);
 
-  const { formState: { errors }, control, handleSubmit, setValue } = useForm<SessaoState>({ defaultValues: InitialSessaoState });
+  const { formState: { errors }, control, handleSubmit, setValue, watch } = useForm<SessaoState>({ defaultValues: InitialSessaoState });
 
   const report = () => {
     SessaoReports(sessoes);
@@ -47,7 +48,6 @@ export default function Sessao() {
   }
 
   const editar = async (sessao: SessaoState) => {
-    //const response = await apiEditSessao(sessao);
 
     let response;
     try {
@@ -97,6 +97,7 @@ export default function Sessao() {
   }, [])
 
   const atualizar = async (sessao: SessaoState) => {
+    console.log("Sessao.InPago: ", sessao.inPago);
     setCreated(false);
     setValue('sessaoId', sessao.sessaoId);
     setValue('pacienteId', sessao.pacienteId);
@@ -104,7 +105,10 @@ export default function Sessao() {
     setValue('data', data);
     setValue('observacao', sessao.observacao);
     setValue('valor', sessao.valor);
+    setValue('inPago', sessao.inPago);
   }
+
+  const inPago = watch('inPago');
 
   function eliminarId(arr1, b) {
     return arr1.filter(function (ele_val) {
@@ -136,6 +140,14 @@ export default function Sessao() {
       {
         Header: 'Valor',
         accessor: 'valor',
+      },
+      {
+        Header: 'Observação',
+        accessor: 'observacao',
+      },
+      {
+        Header: 'Pago',
+        accessor: 'pago',
       },
       {
         Header: 'Ações',
@@ -195,6 +207,13 @@ export default function Sessao() {
             required: 'Valor é campo obrigatorio.',
           }}
         />
+        <Checkbox
+          id="inPago"
+          label="Pago ?"
+          control={control}
+          errors={errors}
+          checked={inPago ? true : false}
+        />
       </Box>
       <Box className="text-center">
         <input type="button" className="text-white bg-blue-700 rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 disabled:bg-slate-300" onClick={handleSubmit(submeter)} value="Cadastrar" disabled={!created} />
@@ -206,6 +225,7 @@ export default function Sessao() {
           data={sessoes.map((sessao) => ({
             ...sessao,
             data: moment(sessao.data).format('DD/MM/yyyy HH:mm'),
+            pago: sessao.inPago ? <i className="fa-solid fa-circle-dollar-to-slot text-green-500" /> : <i className="fa-solid fa-circle-dollar-to-slot text-red-500" />,
             acoes: (
               <div>
                 <button

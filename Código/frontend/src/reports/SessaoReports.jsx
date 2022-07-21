@@ -15,7 +15,10 @@ export default function SessaoReports(sessoes) {
     }
   ]
 
+  let soma = 0;
   const dados = sessoes.map((sessao) => {
+    soma += parseInt(sessao.valor)
+    console.log("Soma: ", soma)
     return [
       { text: sessao.paciente.nome, fontSize: 9, margin: [0, 2, 0, 2] },
       { text: moment(sessao.data).format('DD/MM/yyyy HH:mm'), fontSize: 9, margin: [0, 2, 0, 2]  },
@@ -34,7 +37,12 @@ export default function SessaoReports(sessoes) {
             { text: 'Data', style: 'tableHeader', fontSize: 10 },
             { text: 'Valor', style: 'tableHeader', fontSize: 10 },
           ],
-          ...dados
+          ...dados,
+          [
+            { text: 'Total', fontSize: 9, margin: [0, 2, 0, 2] },
+            { text: '', fontSize: 9, margin: [0, 2, 0, 2]  },
+            { text: soma, fontSize: 9, margin: [0, 2, 0, 2]  },
+          ]
         ]
       },
       layout: 'lightHorizontalLines'
