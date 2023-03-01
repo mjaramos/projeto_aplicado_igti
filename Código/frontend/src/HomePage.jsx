@@ -9,6 +9,12 @@ export default function HomePage() {
         <li>
           Acesse Sessões para cadastrar suas sessões.
         </li>
+        <li>
+          Acesse Relatórios para visualizar os relatórios.
+        </li>
+        <li>
+          Acesse Calendários para visualizar o calendário.
+        </li>
       </ul>
     </div>
   )

@@ -26,7 +26,7 @@ const Sessao = db.define(
     },
     inPago: {
       type: Sequelize.BOOLEAN,
-      allowNull: false,
+      allowNull: true,
     }
   },
   { underscored: true }
